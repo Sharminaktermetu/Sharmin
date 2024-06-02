@@ -13,8 +13,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        'orange-top': '0 -6px 15px -2px rgba(255, 165, 0, 0.5), 0 -3px 10px -2px rgba(255, 165, 0, 0.2)',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui'),],
 };
 export default config;
