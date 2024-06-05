@@ -11,7 +11,7 @@ const Navber = () => {
   const pathname = usePathname();
   return (
     <div>
-      <div className="btm-nav shadow-orange-top rounded-lg bg-transparent">
+      <div className="btm-nav shadow-orange-top rounded-lg bg-transparent text-slate-300">
         <div>
           <div className="text-white font-semibold text-xl">
             <i>
@@ -69,7 +69,7 @@ const Navber = () => {
         </Link>
 
         <div>
-          <p>© All rights reserved</p>
+          <p className="text-slate-600">© All rights reserved</p>
         </div>
       </div>
     </div>
