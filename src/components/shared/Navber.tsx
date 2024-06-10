@@ -41,6 +41,15 @@ const Navber = () => {
           <span className="btm-nav-label">Home</span>
         </Link>
         <Link
+          href="/skills"
+          className={`transition-transform hover:translate-x-1 ${
+            pathname === "/skills" ? "text-orange-300" : ""
+          }`}
+        >
+          <GiSkills />
+          <span className="btm-nav-label">Skills</span>
+        </Link>
+        <Link
           href="/projects"
           className={`transition-transform hover:translate-x-1 ${
             pathname === "/projects" ? "text-orange-300" : ""
@@ -58,15 +67,7 @@ const Navber = () => {
           <MdOutlineRoundaboutRight />
           <span className="btm-nav-label">About me</span>
         </Link>
-        <Link
-          href="/experience"
-          className={`transition-transform hover:translate-x-1 ${
-            pathname === "/experience" ? "text-orange-300" : ""
-          }`}
-        >
-          <GiSkills />
-          <span className="btm-nav-label">Experience</span>
-        </Link>
+      
 
         <div>
           <p className="text-slate-600">© All rights reserved</p>
