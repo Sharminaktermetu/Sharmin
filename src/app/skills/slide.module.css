@@ -1,66 +1,111 @@
-.body{
+.body {
     min-height: 100vh;
     display: grid;
-    place-items: center;
-}
-.slider{
-    display: grid;
-position: relative;
-place-items: center;
-height: 250px;
-width: 100%;
-overflow: hidden;
+    /* place-items: center; */
 }
 
-.slideTrack{
+.slider {
+    display: grid;
+    position: relative;
+    place-items: center;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slideTrack {
     display: flex;
     width: calc(250px * 10);
     animation: scroll 30s linear infinite;
 }
-.slideTrack:hover{
-    animation-play-state: paused;
+
+.slide:hover .message {
+    display: block;
 }
+
 @keyframes scroll {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    100%{
+
+    100% {
         transform: translate(calc(-200px*5));
     }
 }
 
-.slide{
+.slide {
     height: 200px;
     width: 200px;
     display: flex;
     align-items: center;
-    padding: 15px;
+
     perspective: 100px;
 }
-.img{
- 
+
+.img {
+    clip-path: circle(75.0% at 31% 69%);
     transition: transform 1s;
+    border-radius: 10px 0px 10px 10px;
+    z-index: -1;
 }
-.img:hover{
+
+.img:hover {
     transform: translateZ(20px);
-    background: red;
+
 }
 
 .slider::before,
-.slider::after{
-    background:linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0)100%);
+.slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0)100%);
     content: '';
     height: 100%;
     position: absolute;
     z-index: 1;
-    width: 15%;
+    width: 10%;
+
 }
-.slider::before{
+
+.slider::before {
     left: 0;
     top: 0;
 }
-.slider::after{
+
+.slider::after {
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
+}
+
+.message {
+
+    position: absolute;
+    background: #fdba74;
+    width: 150px;
+    bottom: 0;
+    top: 10px;
+    left: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    opacity: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    box-shadow: 2px 3px 12px solid red;
+    height: 100px;
+    visibility: hidden;
+    transition: 0.5s;
+    z-index: 100;
+}
+/* .message::before{
+    content: '';
+    position: absolute;
+    background: #fdba74;
+    width: 30px;
+    height: 30px;
+    left: -10px;
+
+    transform: rotate(45deg);
+} */
+.slide:hover .message {
+    visibility: visible;
+    opacity: 1;
 }
