@@ -41,9 +41,9 @@ const Navber = () => {
           <span className="btm-nav-label">Home</span>
         </Link>
         <Link
-          href="/skills"
+          href="/my-skills"
           className={`transition-transform hover:translate-x-1 ${
-            pathname === "/skills" ? "text-orange-300" : ""
+            pathname === "/my-skills" ? "text-orange-300" : ""
           }`}
         >
           <GiSkills />
