@@ -3,8 +3,8 @@ import Link from "next/link";
 import React from "react";
 
 const ProjectsPage = async() => {
-  const res =await fetch('http://localhost:5001/all-projects')
-  const data =await res.json()
+  // const res =await fetch('http://localhost:5001/all-projects')
+  // const data =await res.json()
  
   return (
    <div className="bg-black max-h-[1700px]">
@@ -13,7 +13,7 @@ const ProjectsPage = async() => {
         My Build Projects_
       </h1>
 
-      <div className="grid lg:grid-cols-2 gap-5 cols-12 pb-40">
+      {/* <div className="grid lg:grid-cols-2 gap-5 cols-12 pb-40">
         {data?.data.map((item:any)=>
 
         <div key={item._id} className="card lg:max-w-[90%] lg:h-40 h-[180px] rounded-md card-side bg-base-100 shadow-xl">
@@ -30,7 +30,7 @@ const ProjectsPage = async() => {
         </div>
       )}
       
-      </div>
+      </div> */}
     </div>
    </div>
   );
