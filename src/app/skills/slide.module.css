@@ -81,27 +81,27 @@
     bottom: 0;
     top: 15px;
     right: 15px;
-    padding: 20px;
+    padding: 10px 5px;
     box-sizing: border-box;
     border-radius: 4px;
     opacity: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.1);
-    height: 100px;
+    height: 120px;
     visibility: hidden;
     transition: 0.5s;
     z-index: 100;
 }
 
-.message::before {
+/* .message::before {
     content: '';
     position: absolute;
     background: #fdba74;
     width: 30px;
-    height: 20px;
+    height: 200px;
     left: -15px;
     transform: rotate(45deg); 
-} 
+}  */
 
 .slide:hover .message {
     visibility: visible;

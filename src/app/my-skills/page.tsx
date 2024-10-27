@@ -19,46 +19,74 @@ export default function index(): JSX.Element {
 
           <section className='bg-gray-300 text-black mt-48 grid place-content-center h-screen sticky top-0 rounded-2xl  overflow-hidden'>
             <div className='absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]'></div>
-            <h1 className='2xl:text-7xl w-[800px] text-4xl px-8 font-semibold text-center tracking-tight leading-[120%]'>
+            <h1 className='2xl:text-7xl lg:w-[800px] lg:text-4xl text-2xl px-8 font-semibold text-center tracking-tight leading-[120%]'>
             "Developing Today, Innovating for Tomorrow with: React | Next.js | TypeScript | Redux | MongoDB | Node.js | and more..." 💼
             </h1>
           </section>
         </div>
 
-        <section className='text-white  w-full bg-slate-950 mt-48'>
-          <div className='grid grid-cols-2'>
-            <div className='sticky h-screen flex items-center justify-center'>
-              <h1 className='2xl:text-7xl text-5xl px-8 font-semibold text-center'>
-                Thanks To Scroll.
-                <br /> Now Scroll Up Again☝️🏿
-              </h1>
-            </div>
-            <div className='grid gap-2'>
-              <figure className='grid place-content-center -skew-x-12'>
-                {/* <img
-                  src='https://images.unsplash.com/photo-1718838541476-d04e71caa347?w=500&auto=format&fit=crop'
-                  alt=''
-                  className='transition-all duration-300 w-80 h-96  align-bottom object-cover '
-                /> */}
-                {/* <Image height={280} width={320} alt='' src='https://images.unsplash.com/photo-1718838541476-d04e71caa347?w=500&auto=format&fit=crop'/> */}
-                <div className="width:320px;height:280;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/662x4ljufm1MVbP2Eu" width="100%" height="100%" className="position:absolute" allowFullScreen></iframe></div>
-              </figure>
-              <figure className='grid place-content-center skew-x-12'>
 
-              <div className="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/CrFLL3CnRpw5ddlBMm" width="100%" height="100%" className="position:absolute" allowFullScreen></iframe></div>
 
-              </figure>
-              <figure className='grid place-content-center -skew-x-12'>
-               
-                <div>
-                <iframe src="https://giphy.com/embed/ZbOJHSRcz1Gn95PXpO"></iframe></div>
-              </figure>
+
+
+
+
+
+
+        <section className='text-white bg-slate-950 my-48'>
+  <div className='grid grid-cols-1 lg:grid-cols-2 col-12'>
+    <div className='sticky lg:h-screen h-auto flex items-center justify-center p-4'>
+      <h1 className='text-3xl lg:text-5xl 2xl:text-7xl px-8 font-semibold text-center'>
+        Thanks To Scroll.
+        <br /> Now Scroll Again 👇
+      </h1>
+    </div>
+    <div className='lg:grid gap-2 p-4'>
+      <figure className='lg:grid lg:place-content-center -skew-x-12'>
+        <div>
+          <iframe
+            src="https://giphy.com/embed/662x4ljufm1MVbP2Eu"
+            className="w-full h-[150px] lg:h-[300px]" // Set responsive height and width
+            allowFullScreen
+          ></iframe>
+        </div>
+      </figure>
+      <figure className='lg:grid lg:place-content-center skew-x-12'>
+        <div>
+          <iframe
+            src="https://giphy.com/embed/CrFLL3CnRpw5ddlBMm"
+            className="w-full h-[150px] lg:h-[300px]" // Set responsive height and width
+            allowFullScreen
+          ></iframe>
+        </div>
+      </figure>
+      <figure className='lg:grid lg:place-content-center -skew-x-12'>
+        <div>
+          <iframe
+            src="https://giphy.com/embed/ZbOJHSRcz1Gn95PXpO"
+            className="w-full h-[150px] lg:h-[300px]" // Set responsive height and width
+            allowFullScreen
+          ></iframe>
+        </div>
+      </figure>
 
             
             </div>
           </div>
         </section>
-        <section className='text-white   w-full bg-slate-950'>
+
+
+
+
+
+
+
+
+
+
+
+
+        <section className='text-white   w-full bg-slate-950 my-48'>
           <div className='grid grid-cols-2 px-8'>
             <div className='grid gap-2'>
               <figure className='sticky top-0 h-screen grid place-content-center'>
@@ -99,7 +127,7 @@ export default function index(): JSX.Element {
         <ExperiencePage/>
      </div>
      <footer className='group bg-slate-950 my-48'>
-          
+          <p className='grid place-content-center text-6xl'>👆 </p>
           <section className='bg-orange-300 h-28 relative z-10 grid place-content-center text-black text-2xl rounded-tr-full rounded-tl-full'>
             Thanks for Scrolling 😍😍
           </section>

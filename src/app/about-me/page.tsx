@@ -12,14 +12,14 @@ import Link from "next/link";
 const AboutMe = () => {
   const handleDownload = () => {
 
-    const pdfUrl = 'my.pdf'
+    const pdfUrl = 'sharmin_cv.pdf'
     
 
     const anchor = document.createElement('a');
     anchor.href = pdfUrl;
     anchor.target='_blank'
    
-    anchor.download = 'my.pdf';
+    anchor.download = 'sharmin_cv.pdf';
     anchor.click();
   };
   return (
@@ -38,7 +38,7 @@ const AboutMe = () => {
               <button onClick={handleDownload} className="btn btn-outline border-slate-300 border text-orange-300 font-semibold">
               Download My CV
               </button>
-               <button ></button>
+               
               <div className='flex gap-6 mt-2 items-center text-black justify-center'>
                 <IoMailSharp className="h-6 w-6 bg-orange-200 rounded-full p-1" />
                 <FaGithub className="h-6 w-6 bg-orange-200 rounded-full p-1" />
