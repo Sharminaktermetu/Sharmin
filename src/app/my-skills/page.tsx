@@ -1,8 +1,8 @@
 'use client';
 import { ReactLenis } from 'lenis/react';
 
-import ExperiencePage from '../Skills/Skills';
-export default function index(): JSX.Element {
+import ExperiencePage from '../../components/Skills/Skills';
+export default function MYSkillsPage(): JSX.Element {
   return (
     <ReactLenis root>
       <main className='bg-slate-950'>
