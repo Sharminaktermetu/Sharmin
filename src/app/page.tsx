@@ -26,7 +26,7 @@ const Homepage = () => {
         <h1 className='text-7xl font-bold'>Hello.</h1>
    
         <hr className='w-5 bg-slate-500'/>
-        <h3 className='max:w-[300px] lg:pt-5'>"It's <span className='text-orange-300'>Sharmin</span>. Crafting Seamless User Experiences with MERN Stack & Next.js"</h3>
+        <h3 className='max:w-[300px] lg:pt-5'>&quot;It&apos;s <span className='text-orange-300'>Sharmin</span>. Crafting Seamless User Experiences with MERN Stack & Next.js&quot;</h3>
         <p className='max:w-[300px] lg:pt-3'>Frontend Developer Specializing in Dynamic Web Applications and Modern Design.</p>
        <div className='my-4'>
        <button onClick={handleDownload} className="btn btn-outline border-slate-300 border text-orange-300 font-semibold">

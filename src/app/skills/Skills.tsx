@@ -25,7 +25,7 @@ const ExperiencePage = () => {
       <div className={slide.slide}>
         <Image className={slide.img} src={mdb} height={150} width={150} alt='' />
         <div className={slide.message}>
-          <p>Delivering polished UIs with MDB's</p>
+          <p>Delivering polished UIs with MDB&apos;s</p>
         </div>
       </div>
       <div className={slide.slide}>
