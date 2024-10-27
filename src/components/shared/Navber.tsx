@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-// import { GoProjectSymlink } from "react-icons/go";
 import { MdOutlineRoundaboutRight } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
 
 import { usePathname } from "next/navigation";
+import { GoProjectSymlink } from "react-icons/go";
 
 const Navber = () => {
   const pathname = usePathname();
@@ -49,7 +49,7 @@ const Navber = () => {
           <GiSkills />
           <span className="btm-nav-label">Skills</span>
         </Link>
-        {/* <Link
+        <Link
           href="/projects"
           className={`transition-transform hover:translate-x-1 ${
             pathname === "/projects" ? "text-orange-300" : ""
@@ -57,7 +57,7 @@ const Navber = () => {
         >
           <GoProjectSymlink />
           <span className="btm-nav-label">Projects</span>
-        </Link> */}
+        </Link>
         <Link
           href="/about-me"
           className={`transition-transform hover:translate-x-1 ${
