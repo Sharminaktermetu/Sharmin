@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { GoProjectSymlink } from "react-icons/go";
+// import { GoProjectSymlink } from "react-icons/go";
 import { MdOutlineRoundaboutRight } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
 
