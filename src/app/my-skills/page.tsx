@@ -95,7 +95,7 @@ export default function MYSkillsPage(): JSX.Element {
 
 
 
-        <section className='text-white   w-full bg-slate-950 my-48'>
+        <section className='text-white   w-full bg-slate-950 my-48 lg:block hidden'>
           <div className='grid grid-cols-2 px-8'>
             <div className='grid gap-2'>
               <figure className='sticky top-0 h-screen grid place-content-center'>

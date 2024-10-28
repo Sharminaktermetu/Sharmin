@@ -12,13 +12,14 @@ const Navber = () => {
   return (
     <div>
       <div className="btm-nav shadow-orange-top rounded-lg bg-transparent text-slate-300">
-        <div>
-          <div className="text-white font-semibold text-xl">
-            <i>
-              Sharmin&apos;s <span className="text-orange-300">P</span>ortfolio
-            </i>
-          </div>
+
+        <div className="text-white lg:text-xl hidden lg:flex lg:justify-center lg:items-center">
+          <i>
+            Sharmin&apos;s <span className="text-orange-300">P</span>ortfolio
+          </i>
         </div>
+
+
 
         <Link
           href="/"
@@ -42,36 +43,34 @@ const Navber = () => {
         </Link>
         <Link
           href="/my-skills"
-          className={`transition-transform hover:translate-x-1 ${
-            pathname === "/my-skills" ? "text-orange-300" : ""
-          }`}
+          className={`transition-transform hover:translate-x-1 ${pathname === "/my-skills" ? "text-orange-300" : ""
+            }`}
         >
           <GiSkills />
           <span className="btm-nav-label">Skills</span>
         </Link>
         <Link
           href="/projects"
-          className={`transition-transform hover:translate-x-1 ${
-            pathname === "/projects" ? "text-orange-300" : ""
-          }`}
+          className={`transition-transform hover:translate-x-1 ${pathname === "/projects" ? "text-orange-300" : ""
+            }`}
         >
           <GoProjectSymlink />
           <span className="btm-nav-label">Projects</span>
         </Link>
         <Link
           href="/about-me"
-          className={`transition-transform hover:translate-x-1 ${
-            pathname === "/about-me" ? "text-orange-300" : ""
-          }`}
+          className={`transition-transform hover:translate-x-1 ${pathname === "/about-me" ? "text-orange-300" : ""
+            }`}
         >
           <MdOutlineRoundaboutRight />
           <span className="btm-nav-label">About me</span>
         </Link>
-      
 
-        <div>
-          <p className="text-slate-600">© All rights reserved</p>
+
+        <div className="hidden lg:flex lg:justify-center lg:items-center">
+          <p className="text-slate-600 text-center">© All rights reserved</p>
         </div>
+
       </div>
     </div>
   );
