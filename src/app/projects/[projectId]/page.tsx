@@ -8,25 +8,25 @@ const SinleProject = async ({ params }: any) => {
       <div>
          <div className="hero min-h-screen mx-auto w-[80%]">
             <div className="hero-content flex-col lg:flex-row gap-x-20">
-               {data.image?<Image
+               {data.image ? <Image
                   src={data?.images}
                   width={100}
                   height={100}
 
 
                   alt="Picture of the author"
-               />:''}
+               /> : ''}
                <div>
                   <h1 className="text-5xl font-bold text-orange-300 py-3">{data.name}</h1>
-                  <hr className="w-[30%]"/>
+                  <hr className="w-[30%]" />
                   <div className="flex gap-5">
                      <p className=" text-slate-400 text-2xl">What is included: {data.learn}</p>
                   </div>
-                     <div className="text-slate-400"><span className="text-orange-300 font-semibold">What Texhnology used:</span> {data.technology.map((item:any)=><p key={item.name}>{item}</p>)}</div>
-              
-                
-              
-                  
+                  <div className="text-slate-400"><span className="text-orange-300 font-semibold">What Texhnology used:</span> {data.technology.map((item: any) => <p key={item.name}>{item}</p>)}</div>
+
+
+
+
                </div>
             </div>
 

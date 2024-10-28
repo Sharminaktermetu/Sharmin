@@ -23,11 +23,12 @@ const AboutMe = () => {
     anchor.click();
   };
   return (
-    <div className="text-white pb-26">
-      <div className="lg:flex justify-around items-center h-full">
-        <div className="pt-6">
+<div className="max-w-[1200px] lg:max-w-full mx-auto lg:h-screen h-[1200px] bg-slate-950">
+<div className="text-white pb-26">
+      <div className="lg:flex justify-evenly items-center h-full">
+        <div className="mt-5">
 
-          <div className="card w-96 glass">
+          <div className="card lg:w-80 glass mx-auto w-80">
             <figure className="p-3">
               <Image className='rounded-md shadow-md shadow-slate-300' src={img} width={200} height={100} alt='' />
             </figure>
@@ -51,11 +52,12 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className="">
+        <div className="lg:mt-12 mt-28">
           <Accordian />
         </div>
       </div>
     </div>
+</div>
   );
 };
 
