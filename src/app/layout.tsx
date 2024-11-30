@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navber from "@/components/shared/Navber";
 
@@ -18,9 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navber/>
-       <div className="bg-black h-screen"> {children}</div>
-        </body>
+        {/* Load the anime.min.js script */}
+        <Script src="/path/to/anime.min.js" strategy="lazyOnload" />
+        
+        <Navber />
+        <div className="h-screen bg-gradient-to-r from-[#001f3f] via-[#000000] to-[#511592]">{children}</div>
+      </body>
     </html>
   );
 }
