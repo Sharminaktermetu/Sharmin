@@ -8,15 +8,19 @@ const ProjectsPage = async () => {
   const data = await res.json();
 
   return (
-    <div className="bg-black max-h-[1700px] ">
+    <div
+      className="bg-gradient-to-r from-[#001f3f] via-[#000000] to-[#511592]
+
+
+ max-h-[1700px] "
+    >
       <div className="max-w-[1200px] mx-auto">
-      <div className="flex items-center justify-center">
-        
-      <HyperText
-          className="lg:text-6xl font-bold text-slate-300 my-12"
-          text="My Build Projects_"
-        />
-      </div>
+        <div className="flex items-center justify-center">
+          <HyperText
+            className="lg:text-6xl font-bold text-slate-300 my-12"
+            text="My Build Projects_"
+          />
+        </div>
         <div className="grid lg:grid-cols-2 gap-7 cols-12 pb-40">
           {data?.data.map((item: any) => (
             <div

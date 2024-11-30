@@ -1,23 +1,24 @@
 import React from "react";
 import HyperText from "./ui/hyper-text";
+import Particles from "./ui/particles";
 
 const Accordian = () => {
   return (
-    <div className="lg:h-screen h-[1200px] bg-slate-950">
-
-      <div className="flex items-center justify-center py-16">
+    <div className="lg:h-screen h-[1200px]">
+    
+      <div className="flex items-center justify-center">
         
       <HyperText
           className="lg:text-6xl font-bold text-slate-300"
           text="Faq_"
         />
       </div>
-    <div className="max-w-[1200px]  mx-auto">
+    <div className="max-w-[900px]  mx-auto  p-12">
     <div className="join join-vertical text-white">
-        <div className="collapse collapse-arrow join-item border border-orange-300">
+        <div className="collapse collapse-arrow join-item border border-orange-300 bg-slate-950">
           <input type="radio" name="my-accordion-4" />
           <div className="collapse-title text-xl font-medium">Who I am?</div>
-          <div className="collapse-content">
+          <div className="collapse-content bg-slate-950">
             <p>
               Hey there, I&apos;m Sharmin, a web application developer
               specializing in the MERN stack. My journey revolves around
@@ -26,12 +27,12 @@ const Accordian = () => {
             </p>
           </div>
         </div>
-        <div className="collapse collapse-arrow join-item border border-base-300">
+        <div className="collapse collapse-arrow join-item border border-orange-300 bg-slate-950">
           <input type="radio" name="my-accordion-4" />
           <div className="collapse-title text-xl font-medium">
             Education Qualification
           </div>
-          <div className="collapse-content">
+          <div className="collapse-content bg-slate-950">
             <p>
               Bachelor degree in English, with a focus on web development and
               hands-on experience in React, Redux, and the MERN stack. Skilled
@@ -40,12 +41,12 @@ const Accordian = () => {
             </p>
           </div>
         </div>
-        <div className="collapse collapse-arrow join-item border border-orange-300">
+        <div className="collapse collapse-arrow join-item border border-orange-300 bg-slate-950">
           <input type="radio" name="my-accordion-4" />
           <div className="collapse-title text-xl font-medium">
             Why Interested for WEB development?
           </div>
-          <div className="collapse-content">
+          <div className="collapse-content bg-slate-950">
             <p>
               I&apos;m passionate about web development because it lets me
               combine creativity with problem-solving to build applications that
@@ -54,12 +55,12 @@ const Accordian = () => {
             </p>
           </div>
         </div>
-        <div className="collapse collapse-arrow join-item border border-base-300">
+        <div className="collapse collapse-arrow join-item border border-orange-300 bg-slate-950">
           <input type="radio" name="my-accordion-4" />
           <div className="collapse-title text-xl font-medium">
             Which benifits you will get from me?
           </div>
-          <div className="collapse-content">
+          <div className="collapse-content bg-slate-950">
             <p>
               With my expertise in modern web technologies like React,
               TypeScript, and responsive design, I bring efficient, scalable

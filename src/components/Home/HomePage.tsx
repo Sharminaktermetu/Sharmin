@@ -2,8 +2,8 @@
 import Image from "next/image";
 import WaterDropGrid from "../water-drop/water-drop";
 
-
 import img from '../../assests/download.gif'
+import ShineBorder from "../ui/shine-border";
 const Homepage = () => {
   const handleDownload = () => {
 
@@ -19,6 +19,7 @@ const Homepage = () => {
   };
 
   return (
+    
     <div className='max-w-[1200px] mx-auto'>
       <div className='grid grid-cols-12 text-white justify-items-center lg:place-content-center h-screen'>
 
@@ -38,9 +39,16 @@ const Homepage = () => {
           <h3 className='max:w-[300px] pt-5'>&quot;It&apos;s <span className='text-orange-300'>Sharmin</span>. Crafting Seamless User Experiences with MERN Stack & Next.js&quot;</h3>
           <p className='max:w-[300px] pt-3'>Frontend Developer Specializing in Dynamic Web Applications and Modern Design.</p>
           <div className='lg:my-4 mt-4'>
-            <button onClick={handleDownload} className="btn btn-outline border-slate-300 border text-orange-300 font-semibold">
+      
+
+            <ShineBorder
+      className="btn btn-outline  text-orange-300 font-semibold"
+      color="orange"
+    >
+       <button onClick={handleDownload}>
               Download My CV
             </button>
+    </ShineBorder>
           </div>
 
 

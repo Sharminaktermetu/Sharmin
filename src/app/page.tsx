@@ -1,9 +1,10 @@
 import Homepage from '@/components/Home/HomePage'
-import React from 'react'
-import AboutMe from './about-me/page'
+
 import ProjectsPage from './projects/page'
 import Skills from '@/components/Home/Skills'
-import Accordian from '@/components/Accordian'
+
+import { ParticlesDemo } from '@/components/particles/particles'
+import ExperiencePage from '@/components/Skills/Skills'
 
 
 
@@ -13,9 +14,8 @@ const MainPage = () => {
       <Homepage/> 
       <ProjectsPage/>
      <Skills/>
-    
-   <Accordian/>
-
+{/* <ExperiencePage/> */}
+<ParticlesDemo/>
     </div>
   )
 }
