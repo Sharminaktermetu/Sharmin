@@ -8,8 +8,8 @@ const ProjectsPage = async () => {
   const data = await res.json();
 
   return (
-    <div className="bg-black max-h-[1700px]">
-      <div className="w-[90%] mx-auto">
+    <div className="bg-black max-h-[1700px] ">
+      <div className="max-w-[1200px] mx-auto">
       <div className="flex items-center justify-center">
         
       <HyperText
@@ -17,11 +17,11 @@ const ProjectsPage = async () => {
           text="My Build Projects_"
         />
       </div>
-        <div className="grid lg:grid-cols-2 gap-5 cols-12 pb-40">
+        <div className="grid lg:grid-cols-2 gap-7 cols-12 pb-40">
           {data?.data.map((item: any) => (
             <div
               key={item._id}
-              className="card lg:max-w-[90%] lg:h-40 h-[180px] rounded-md card-side bg-base-100 shadow-xl"
+              className="card  lg:h-40 h-[180px] rounded-md card-side bg-base-100 shadow-xl"
             >
               {/* <Image className="p-3 bg-cover" src={item.images} width={100} height={20} alt="project"/> */}
 

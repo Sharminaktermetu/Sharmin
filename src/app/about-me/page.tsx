@@ -7,8 +7,7 @@ import { IoMailSharp } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import resume from '../../assests/download.gif'
-import Link from "next/link";
+
 const AboutMe = () => {
   const handleDownload = () => {
 
@@ -23,8 +22,8 @@ const AboutMe = () => {
     anchor.click();
   };
   return (
-<div className="max-w-[1200px] lg:max-w-full mx-auto lg:h-screen h-[1200px] bg-slate-950">
-<div className="text-white pb-26">
+<div className="lg:h-screen h-[1200px] bg-slate-950">
+<div className="text-white pb-26 max-w-[1200px]  mx-auto">
       <div className="lg:flex justify-evenly items-center h-full">
         <div className="mt-5">
 
