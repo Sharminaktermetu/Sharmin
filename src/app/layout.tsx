@@ -23,7 +23,7 @@ export default function RootLayout({
         <Script src="/path/to/anime.min.js" strategy="lazyOnload" />
         
         <Navber />
-        <div className="h-screen bg-gradient-to-r from-[#001f3f] via-[#000000] to-[#511592]">{children}</div>
+        <div className=" bg-gradient-to-r from-[#001f3f] via-[#000000] to-[#511592]">{children}</div>
       </body>
     </html>
   );

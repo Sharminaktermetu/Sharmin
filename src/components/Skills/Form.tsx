@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { Mail, User, MessageSquare } from 'lucide-react';
+import ShineBorder from '../ui/shine-border';
 
 // Define types for form data and errors
 interface FormData {
@@ -110,9 +111,9 @@ const ContactForm: React.FC = () => {
 
   return (
     <div >
-      <div className="w-full max-w-md bg-white shadow-2xl rounded-2xl overflow-hidden">
+      <div className="w-full max-w-md bg-[#122136] shadow-2xl rounded-2xl overflow-hidden">
         <div className="p-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+          <h2 className="text-3xl font-bold text-gray-200 mb-6 text-center">
             Message Me
           </h2>
           <p className="text-gray-600 text-center mb-8">
@@ -130,7 +131,7 @@ const ContactForm: React.FC = () => {
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={handleChange}
-                className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 ${
+                className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 bg-[#122136] ${
                   errors.name 
                     ? 'border-red-500 focus:ring-red-300' 
                     : 'border-gray-300 focus:ring-blue-300'
@@ -151,7 +152,7 @@ const ContactForm: React.FC = () => {
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={handleChange}
-                className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 ${
+                className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 bg-[#122136] ${
                   errors.email 
                     ? 'border-red-500 focus:ring-red-300' 
                     : 'border-gray-300 focus:ring-blue-300'
@@ -172,7 +173,7 @@ const ContactForm: React.FC = () => {
                 value={formData.message}
                 onChange={handleChange}
                 rows={4}
-                className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 resize-none ${
+                className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 resize-none bg-[#122136] ${
                   errors.message 
                     ? 'border-red-500 focus:ring-red-300' 
                     : 'border-gray-300 focus:ring-blue-300'
@@ -182,18 +183,20 @@ const ContactForm: React.FC = () => {
                 <p className="text-red-500 text-sm mt-1">{errors.message}</p>
               )}
             </div>
-            
-            <button
+            <ShineBorder
+      className="btn btn-outline  text-orange-300 font-semibold w-full"
+      color="orange"
+    >
+      <button
               type="submit"
               disabled={isSubmitting}
-              className={`w-full py-3 rounded-lg text-white font-semibold transition-all duration-300 ${
-                isSubmitting 
-                  ? 'bg-gray-400 cursor-not-allowed' 
-                  : 'bg-blue-600 hover:bg-blue-700 active:bg-blue-800'
-              }`}
+             
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
+    </ShineBorder>
+            
+            
           </form>
         </div>
       </div>

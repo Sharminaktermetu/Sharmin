@@ -4,6 +4,7 @@ import WaterDropGrid from "../water-drop/water-drop";
 
 import img from '../../assests/download.gif'
 import ShineBorder from "../ui/shine-border";
+import Particles from "../ui/particles";
 const Homepage = () => {
   const handleDownload = () => {
 
@@ -19,6 +20,8 @@ const Homepage = () => {
   };
 
   return (
+    <div>
+      
     
     <div className='max-w-[1200px] mx-auto'>
       <div className='grid grid-cols-12 text-white justify-items-center lg:place-content-center h-screen'>
@@ -68,6 +71,15 @@ const Homepage = () => {
 
         </div>
       </div>
+    </div>
+    <Particles
+        className="absolute inset-0"
+        quantity={80}
+        size={0.2}
+        ease={80}
+       color="#fff"
+        refresh
+      />
     </div>
   );
 };
