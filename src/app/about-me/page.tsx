@@ -51,7 +51,7 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className="lg:mt-12 mt-28">
+        <div className="lg:mt-12 py-20">
           <Accordian />
         </div>
       </div>

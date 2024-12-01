@@ -5,7 +5,15 @@ import Image from "next/image";
 
 const Recentprojects = () => {
   return (
-    <div className="max-w-[1200px] mx-auto">
+    <div className="max-w-[1200px] mx-auto py-20">
+       <div className="flex items-center justify-center ">
+          <p
+            className="lg:text-6xl font-bold text-slate-300 my-16"
+           
+          >
+           Recent Projects
+          </p>
+        </div>
       <div className="grid lg:grid-cols-2 gap-7 cols-12">
       <div className="card image-full  rounded-3xl">
       <div className="h-[900px] overflow-hidden rounded-3xl">

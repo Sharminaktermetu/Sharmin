@@ -7,6 +7,7 @@ import { ParticlesDemo } from '@/components/particles/particles'
 import ExperiencePage from '@/components/Skills/Skills'
 import { ShineBorderDemo } from '@/components/Home/BeamCard'
 import Recentprojects from '@/components/Home/Recentprojects'
+import Footer from '@/components/shared/Footer'
 
 
 
@@ -21,6 +22,7 @@ const MainPage = () => {
 {/* <ExperiencePage/> */}
 
 <ParticlesDemo/>
+<Footer/>
     </div>
   )
 }

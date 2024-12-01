@@ -10,7 +10,7 @@ const Accordian = () => {
         
       <HyperText
           className="lg:text-6xl font-bold text-slate-300"
-          text="Faq_"
+          text="FAQ_"
         />
       </div>
     <div className="max-w-[900px]  mx-auto  p-12">

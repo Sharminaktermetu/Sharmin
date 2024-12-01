@@ -14,7 +14,7 @@ console.log(data)
       <div className="max-w-[1200px] mx-auto py-20">
         <div className="flex items-center justify-center">
           <HyperText
-            className="lg:text-6xl font-bold text-slate-300 my-12"
+            className="lg:text-6xl font-bold text-slate-300 my-16"
             text="My Build Projects_"
           />
         </div>
