@@ -6,6 +6,7 @@ import Skills from '@/components/Home/Skills'
 import { ParticlesDemo } from '@/components/particles/particles'
 import ExperiencePage from '@/components/Skills/Skills'
 import { ShineBorderDemo } from '@/components/Home/BeamCard'
+import Recentprojects from '@/components/Home/Recentprojects'
 
 
 
@@ -14,9 +15,11 @@ const MainPage = () => {
     <div>
       <Homepage/> 
       <ShineBorderDemo/>
+      <Recentprojects/>
       <ProjectsPage/>
      <Skills/>
 {/* <ExperiencePage/> */}
+
 <ParticlesDemo/>
     </div>
   )
