@@ -117,7 +117,7 @@ const ContactForm: React.FC = () => {
             Message Me
           </h2>
           <p className="text-gray-600 text-center mb-8">
-            Have a question? We'd love to hear from you.
+            Have a question? We&apos;d love to hear from you.
           </p>
           
           <form onSubmit={handleSubmit} noValidate>

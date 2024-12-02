@@ -18,7 +18,7 @@ const QualityText = () => {
       On the back-end, I work with Node.js, Express, PostgreSQL, and Prisma to build scalable and efficient server-side solutions. I also implement GraphQL for flexible and efficient data management, ensuring a smooth and responsive experience for both users and administrators.
     </p>
     <p className="text-lg">
-      Whether you're looking for a custom web application, a robust content management system, or a fully integrated platform, I am committed to delivering high-quality solutions that meet your unique business needs.
+      Whether you&apos;re looking for a custom web application, a robust content management system, or a fully integrated platform, I am committed to delivering high-quality solutions that meet your unique business needs.
     </p>
   </div>
   )
