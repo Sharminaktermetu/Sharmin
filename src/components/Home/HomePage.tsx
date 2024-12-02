@@ -5,8 +5,7 @@ import WaterDropGrid from "../water-drop/water-drop";
 import img from "../../assests/download.gif";
 import ShineBorder from "../ui/shine-border";
 import Particles from "../ui/particles";
-import { IoMailSharp } from "react-icons/io5";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+
 import { PointerIcon } from "lucide-react";
 const Homepage = () => {
   const handleDownload = () => {

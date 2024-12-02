@@ -19,46 +19,52 @@ const Recentprojects = () => {
   const isCard2InView = useInView(card2Ref, { once: false });
 
   return (
-    <div className="max-w-[1200px] mx-auto lg:py-20">
-      <div className="flex items-center justify-center">
-          <HyperText
-            className="lg:text-6xl text-2xl font-bold text-slate-300 lg:my-16"
-            text="My Build Projects_"
-          />
-        </div>
-      <div className="grid lg:grid-cols-2 gap-7 lg:p-0 p-12">
-        {/* First Card */}
-        <motion.div
-          ref={card1Ref}
-          className="card  rounded-3xl overflow-hidden"
-          initial="hiddenLeft"
-          animate={isCard1InView ? "visible" : "hiddenLeft"}
-          variants={cardVariants}
-          whileHover={{ scale: 1.02 , opacity:1}}
-        >
-          <div className="overflow-hidden rounded-3xl">
-            <Image src={pro1} alt="Project 1" />
-          </div>
-        
-          
-        </motion.div>
-
-        {/* Second Card */}
-        <motion.div
-          ref={card2Ref}
-          className="card rounded-3xl overflow-hidden"
-          initial="hiddenRight"
-          animate={isCard2InView ? "visible" : "hiddenRight"}
-          variants={cardVariants}
-          whileHover={{ scale: 1.02,opacity:1}}
-        >
-          <div className=" overflow-hidden rounded-3xl lg:mt-0 mt-12">
-            <Image src={pro2} alt="Project 2"  />
-          </div>
+  <div>
+      <div className="max-w-[1200px] mx-auto lg:py-20">
+     
+     <div className="flex items-center justify-center">
+         <HyperText
+           className="lg:text-6xl text-2xl font-bold text-slate-300 lg:my-16"
+           text="My Build Projects_"
+         />
+       </div>
+    
+     <div className="grid lg:grid-cols-2 gap-7 lg:p-0 p-12">
+       {/* First Card */}
+       <motion.div
+         ref={card1Ref}
+         className="card  rounded-3xl overflow-hidden"
+         initial="hiddenLeft"
+         animate={isCard1InView ? "visible" : "hiddenLeft"}
+         variants={cardVariants}
+         whileHover={{ scale: 1.02 , opacity:1}}
+       >
+         <div className="overflow-hidden rounded-3xl">
+           <Image src={pro1} alt="Project 1" />
+         </div>
+       
          
-        </motion.div>
-      </div>
-    </div>
+       </motion.div>
+
+       {/* Second Card */}
+       <motion.div
+         ref={card2Ref}
+         className="card rounded-3xl overflow-hidden"
+         initial="hiddenRight"
+         animate={isCard2InView ? "visible" : "hiddenRight"}
+         variants={cardVariants}
+         whileHover={{ scale: 1.02,opacity:1}}
+       >
+         <div className=" overflow-hidden rounded-3xl lg:mt-0 mt-12">
+           <Image src={pro2} alt="Project 2"  />
+         </div>
+        
+       </motion.div>
+     </div> 
+    
+   </div>
+ 
+  </div>
   );
 };
 
