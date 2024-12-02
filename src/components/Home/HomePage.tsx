@@ -21,9 +21,9 @@ const Homepage = () => {
   };
 
   return (
-    <div>
-      <div className="max-w-[1200px] mx-auto">
-        <div className="grid grid-cols-12 text-white justify-items-center lg:place-content-center h-[100vh]">
+    <div className="">
+      <div className="lg:max-w-[1200px] mx-auto">
+        <div className="grid grid-cols-12 text-white justify-items-center lg:place-content-center h-[70vh]">
           <div className="lg:col-span-4 sm:col-span-12 col-span-12">
             <h1 className="text-7xl font-bold lg:block hidden">Hello.</h1>
             <div className="lg:hidden flex items-center justify-center col-span-12 p-3">
@@ -35,9 +35,11 @@ const Homepage = () => {
                 alt=""
               />
             </div>
-
-            <hr className="w-5 bg-slate-500" />
-            <h3 className="max:w-[300px] pt-5">
+          
+           
+           <div className="lg:p-0 p-12">
+           <hr className="w-5 bg-slate-500" />
+           <h3 className="max:w-[300px] pt-5">
               &quot;It&apos;s <span className="text-orange-300">Sharmin</span>.
               Crafting Seamless User Experiences with MERN Stack & Next.js&quot;
             </h3>
@@ -45,6 +47,7 @@ const Homepage = () => {
               Frontend Developer Specializing in Dynamic Web Applications and
               Modern Design.
             </p>
+        
             <div className="lg:my-4 mt-4">
               <ShineBorder
                 className="btn btn-outline  text-orange-300 font-semibold"
@@ -54,7 +57,7 @@ const Homepage = () => {
               </ShineBorder>
             </div>
           </div>
-
+          </div>
           <div className="hidden lg:block lg:col-span-4">
             <Image
               className="rounded-full shadow-lg shadow-slate-300"
@@ -65,9 +68,9 @@ const Homepage = () => {
             />
           </div>
 
-          <div className="lg:col-span-4 sm:col-span-12 col-span-12 lg:gap-7">
+          <div className="lg:col-span-4 col-span-12 lg:gap-7 ">
             <WaterDropGrid />
-           <PointerIcon className="absolute bottom-[180px] right-[20%]"/>
+           <PointerIcon className="absolute lg:bottom-[180px] right-[20%] bottom-0"/>
           </div>
         </div>
       </div>

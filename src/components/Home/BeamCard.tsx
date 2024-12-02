@@ -35,21 +35,21 @@ const featureData = [
 
 export function ShineBorderDemo() {
   return (
-    <div className="max-w-[1200px] mx-auto pb-20">
+    <div className="max-w-[1200px] mx-auto lg:pb-20 mt-24">
       <div className="flex items-center justify-center">
         <HyperText
-          className="lg:text-6xl font-bold text-slate-300 my-16"
+          className="lg:text-6xl text-2xl font-bold text-slate-300 lg:my-16"
           text="Standout Features_"
         />
       </div>
-      <div className="grid lg:grid-cols-3 gap-7 cols-12">
+      <div className="grid lg:grid-cols-3 gap-7 cols-12 lg:p-0 p-12">
         {featureData.map((feature, index) => (
           <ShineBorder
             key={index}
             className="rounded-lg"
             color={feature.color}
           >
-            <div className="bg-slate-950 w-96 rounded h-full text-white">
+            <div className="bg-slate-950 lg:w-96 w-full rounded h-full text-white">
               <div className="card-body group hover:skew-x-2 duration-700">
                 <div className="size-16 bg-[#482788] text-white rounded-full flex items-center justify-center group-hover:scale-125">
                   <Image

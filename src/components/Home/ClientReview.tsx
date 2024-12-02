@@ -68,10 +68,10 @@ const ReviewCard = ({
 
 export function ClientReview() {
   return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg   md:shadow-xl pb-20">
+    <div className="relative flex lg:h-[400px] w-full flex-col items-center justify-center overflow-hidden rounded-lg   md:shadow-xl">
          <div className="flex items-center justify-center">
           <HyperText
-            className="lg:text-6xl font-bold text-slate-300 my-16"
+            className="lg:text-6xl text-2xl font-bold text-slate-300 my-16"
             text="Reviews_"
           />
         </div>

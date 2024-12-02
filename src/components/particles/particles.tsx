@@ -16,7 +16,7 @@ export function ParticlesDemo() {
   }, [resolvedTheme]);
 
   return (
-    <div className="relative flex  w-full flex-col items-center justify-center overflow-hidden shadow-md bg-gradient-to-r from-[#001f3f] via-[#000000] to-[#511592] py-20
+    <div className="relative flex  w-full flex-col items-center justify-center overflow-hidden shadow-md bg-gradient-to-r from-[#001f3f] via-[#000000] to-[#511592] lg:py-20
     ">
          <Accordian/>
       <Particles

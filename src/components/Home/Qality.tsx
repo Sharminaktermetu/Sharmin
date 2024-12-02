@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Qality = () => {
   return (
     <motion.div
-    className="flex flex-col text-white/80 p-4"
+    className="flex flex-col text-white/80 p-4 pt-20"
     initial={{ opacity: 0, y: 100 }} // Starts off-screen, below the viewport
     whileInView={{
       opacity: 1,
@@ -17,17 +17,17 @@ const Qality = () => {
   >
   <div className="flex items-center justify-center">
           <HyperText
-            className="lg:text-6xl font-bold text-slate-300 my-16"
+            className="lg:text-6xl text-2xl font-bold text-slate-300"
             text="My Qualities_"
           />
         </div>
 
-    <div className='flex  max-w-[1200px] mx-auto  items-center justify-center gap-7'>
-      <div className='w-[50%] bg-transparent'>
+    <div className='lg:max-w-[1200px] w-full mx-auto lg:flex lg:gap-7 hero lg:py-20 lg:flex-row flex flex-col'>
+      <div className='lg:w-[50%] p-12 lg:p-0 bg-transparent'>
     <QualityText/>
 
       </div>
-      <div className='w-[50%]'>
+      <div className='lg:w-[50%] w-full lg:p-0 p-12'>
       <QualityCard/>
       </div>
     </div>

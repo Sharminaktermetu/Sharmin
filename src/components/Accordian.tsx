@@ -4,12 +4,12 @@ import HyperText from "./ui/hyper-text";
 
 const Accordian = () => {
   return (
-    <div className="py-20">
+    <div className="lg:py-20">
     
       <div className="flex items-center justify-center">
         
       <HyperText
-          className="lg:text-6xl font-bold text-slate-300"
+          className="lg:text-6xl text-2xl font-bold text-slate-300 mt-5 lg:mt-0"
           text="FAQ_"
         />
       </div>
