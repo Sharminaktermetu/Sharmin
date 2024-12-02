@@ -1,10 +1,10 @@
 import React from "react";
 import HyperText from "./ui/hyper-text";
-import Particles from "./ui/particles";
+
 
 const Accordian = () => {
   return (
-    <div className="lg:h-screen h-[1200px]">
+    <div className="py-20">
     
       <div className="flex items-center justify-center">
         

@@ -19,28 +19,31 @@ export default function TypingAnimation({
   const [i, setI] = useState<number>(0);
 
   useEffect(() => {
-    const typingEffect = setInterval(() => {
-      if (i < text.length) {
+    if (i <= text.length) {
+      const typingEffect = setInterval(() => {
         setDisplayedText(text.substring(0, i + 1));
         setI(i + 1);
-      } else {
-        clearInterval(typingEffect);
-      }
-    }, duration);
+      }, duration);
 
-    return () => {
-      clearInterval(typingEffect);
-    };
-  }, [duration, i]);
+      return () => clearInterval(typingEffect);
+    } else {
+      const resetEffect = setTimeout(() => {
+        setDisplayedText("");
+        setI(0);
+      }, 2000); // 2-second pause
+
+      return () => clearTimeout(resetEffect);
+    }
+  }, [i, text, duration]);
 
   return (
     <h1
       className={cn(
         "font-display text-center text-4xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm",
-        className,
+        className
       )}
     >
-      {displayedText ? displayedText : text}
+      {displayedText}
     </h1>
   );
 }

@@ -36,6 +36,7 @@ export function ServerSlills() {
   const div6Ref = useRef<HTMLDivElement>(null);
   const div7Ref = useRef<HTMLDivElement>(null);
 
+
   return (
     <div
       className="relative flex h-[500px] w-full items-center justify-center overflow-hidden  md:shadow-xl"

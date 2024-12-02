@@ -14,16 +14,17 @@ const Footer = () => {
 
 
   return (
-    <div className="relative flex h-[400px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-slate-700 md:shadow-xl">
+    <div className="relative flex h-[300px] w-full flex-col items-center justify-center overflow-hidden ">
 
       
-   <div className="w-[60%]">
+   <div className="w-[50%]">
       
    <TypingAnimation
-      className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-slate-400 to-blue-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10"
-      text="Thank you for visit my portfolio"
+ 
+      className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-slate-400 to-blue-300/80 bg-clip-text text-center text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10"
+      text="Thank you for visit my portfolio 👌"
     />
-      
+  
    </div>
 
       <Confetti

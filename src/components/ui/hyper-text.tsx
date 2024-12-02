@@ -19,7 +19,7 @@ const getRandomInt = (max: number) => Math.floor(Math.random() * max);
 
 export default function HyperText({
   text,
-  duration = 800,
+  duration = 200,
   framerProps = {
     initial: { opacity: 0, y: -10 },
     animate: { opacity: 1, y: 0 },
@@ -53,16 +53,16 @@ export default function HyperText({
                 ? l
                 : i <= interations.current
                   ? text[i]
-                  : alphabets[getRandomInt(26)]
+                  : alphabets[getRandomInt(10)]
             )
           );
-          interations.current = interations.current + 0.1;
+          interations.current = interations.current + 0.5;
         } else {
           setTrigger(false);
           clearInterval(interval);
         }
       },
-      duration / (text.length * 5)
+      duration / (text.length)
     );
     // Clean up interval on unmount
     return () => clearInterval(interval);

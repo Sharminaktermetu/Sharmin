@@ -1,72 +1,98 @@
-
-
+"use client";
 import Link from "next/link";
-import { AnimatedGradientTextDemo } from "../text/animateText";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import TypingAnimation from "../ui/typing-animation";
 
-const Navber = () => {
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Links data array
+  const navLinks = [
+    { name: "Home", href: "/" },
+    { name: "About Me", href: "/about-me" },
+    { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/contact" },
+  ];
+
+  // Check active link
+  const isActive = (path:any) => pathname === path;
+
   return (
-    <div
-      className="bg-gradient-to-r from-[#001f3f] via-[#000000] to-[#9c40ff]"
-    >
-      <div className="navbar  mx-auto max-w-[1200px] text-white">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
-            </ul>
-          </div>
-
-          <Link href='/'>
-            <AnimatedGradientTextDemo />
+    <div className="bg-gradient-to-r from-[#001f3f] via-[#000000] to-[#9c40ff] py-4 ">
+      <div className="mx-auto max-w-[1200px] flex justify-between items-center px-4 min-h-[40px]">
+        {/* Logo Section */}
+        <div className="flex items-center space-x-4">
+          <Link href="/" className="text-xl font-bold text-white">
+            <TypingAnimation
+              className="text-[20px] italic font-[DancingScript] text-orange-300"
+              text="Sharmin's Portfolio"
+            />
           </Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Item 1</a>
-            </li>
-         
-            <li>
-              <a>Item 2</a>
-            </li>
-         
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul>
+
+        {/* Desktop Links */}
+        <div className="hidden lg:flex space-x-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`${
+                isActive(link.href) ? "text-orange-300 font-bold" : "text-white"
+              } hover:text-orange-300`}
+            >
+              {link.name}
+            </Link>
+          ))}
         </div>
-        <div className="navbar-end"></div>
+
+        {/* Mobile Menu */}
+        <div className="lg:hidden relative">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="text-white focus:outline-none"
+            aria-label="Toggle Menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16m-8 6h8"
+              />
+            </svg>
+          </button>
+
+          {/* Dropdown Menu */}
+          {menuOpen && (
+            <div className="absolute top-10 right-0 w-48 bg-black/80 rounded shadow-lg text-center text-white space-y-4 py-4 z-50">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)} // Close menu on click
+                  className={`block ${
+                    isActive(link.href)
+                      ? "text-orange-300 font-bold"
+                      : "text-white"
+                  } hover:text-orange-300`}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
 };
 
-export default Navber;
+export default Navbar;

@@ -5,6 +5,9 @@ import WaterDropGrid from "../water-drop/water-drop";
 import img from "../../assests/download.gif";
 import ShineBorder from "../ui/shine-border";
 import Particles from "../ui/particles";
+import { IoMailSharp } from "react-icons/io5";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { PointerIcon } from "lucide-react";
 const Homepage = () => {
   const handleDownload = () => {
     const pdfUrl = "sharmin_cv.pdf";
@@ -64,14 +67,16 @@ const Homepage = () => {
 
           <div className="lg:col-span-4 sm:col-span-12 col-span-12 lg:gap-7">
             <WaterDropGrid />
+           <PointerIcon className="absolute bottom-[180px] right-[20%]"/>
           </div>
         </div>
       </div>
+    
       <Particles
         className="absolute inset-0"
-        quantity={80}
-        size={0.2}
-        ease={80}
+        quantity={100}
+        size={0.3}
+        ease={90}
         color="#fff"
         refresh
       />
