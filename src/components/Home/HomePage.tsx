@@ -23,7 +23,7 @@ const Homepage = () => {
   return (
     <div className="">
       <div className="lg:max-w-[1200px] mx-auto">
-        <div className="grid grid-cols-12 text-white justify-items-center lg:place-content-center h-[70vh]">
+        <div className="grid grid-cols-12 text-white justify-items-center lg:place-content-center lg:h-[70vh] h-[100vh]">
           <div className="lg:col-span-4 sm:col-span-12 col-span-12">
             <h1 className="text-7xl font-bold lg:block hidden">Hello.</h1>
             <div className="lg:hidden flex items-center justify-center col-span-12 p-3">
@@ -68,9 +68,9 @@ const Homepage = () => {
             />
           </div>
 
-          <div className="lg:col-span-4 col-span-12 lg:gap-7 ">
+          <div className="lg:col-span-4 col-span-12 lg:gap-7">
             <WaterDropGrid />
-           <PointerIcon className="absolute lg:bottom-[180px] right-[20%] bottom-0"/>
+           <PointerIcon className="absolute lg:bottom-[300px] right-[20%] bottom-0"/>
           </div>
         </div>
       </div>

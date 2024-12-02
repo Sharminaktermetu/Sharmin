@@ -35,7 +35,7 @@ const featureData = [
 
 export function ShineBorderDemo() {
   return (
-    <div className="max-w-[1200px] mx-auto lg:pb-20 mt-24">
+    <div className="max-w-[1200px] mx-auto lg:py-20 mt-24">
       <div className="flex items-center justify-center">
         <HyperText
           className="lg:text-6xl text-2xl font-bold text-slate-300 lg:my-16"
