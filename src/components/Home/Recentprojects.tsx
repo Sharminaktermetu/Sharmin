@@ -33,14 +33,14 @@ const Recentprojects = () => {
        {/* First Card */}
        <motion.div
          ref={card1Ref}
-         className="card  rounded-3xl overflow-hidden"
+         className="card  rounded-3xl"
          initial="hiddenLeft"
          animate={isCard1InView ? "visible" : "hiddenLeft"}
          variants={cardVariants}
          whileHover={{ scale: 1.02 , opacity:1}}
        >
-         <div className="overflow-hidden rounded-3xl">
-           <Image src={pro1} alt="Project 1" />
+         <div>
+           <Image src={pro1} alt="Project 1" className="rounded-3xl" />
          </div>
        
          
@@ -49,14 +49,14 @@ const Recentprojects = () => {
        {/* Second Card */}
        <motion.div
          ref={card2Ref}
-         className="card rounded-3xl overflow-hidden"
+         className="card"
          initial="hiddenRight"
          animate={isCard2InView ? "visible" : "hiddenRight"}
          variants={cardVariants}
          whileHover={{ scale: 1.02,opacity:1}}
        >
-         <div className=" overflow-hidden rounded-3xl lg:mt-0 mt-12">
-           <Image src={pro2} alt="Project 2"  />
+         <div className="lg:mt-0 mt-12">
+           <Image src={pro2} alt="Project 2"  className="rounded-3xl "/>
          </div>
         
        </motion.div>

@@ -27,10 +27,8 @@ const ContactForm: React.FC = () => {
   // Typed state for form errors
   const [errors, setErrors] = useState<FormErrors>({});
 
-  // Typed state for submission status
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
-  // Validation function with explicit return type
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
 
@@ -111,7 +109,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <div >
-      <div className="w-full max-w-md bg-[#122136] shadow-2xl rounded-2xl overflow-hidden">
+      <div className="w-full max-w-md bg-[#122136] shadow-2xl rounded-2xl overflow-hidden hover:scale-105 transition-all duration-1000">
         <div className="p-8">
           <h2 className="text-3xl font-bold text-gray-200 mb-6 text-center">
             Message Me

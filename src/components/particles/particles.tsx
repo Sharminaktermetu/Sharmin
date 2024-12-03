@@ -21,7 +21,7 @@ export function ParticlesDemo() {
          <Accordian/>
       <Particles
         className="absolute inset-0"
-        quantity={80}
+        quantity={70}
         ease={80}
         color={color}
         refresh

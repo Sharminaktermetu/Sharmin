@@ -7,6 +7,9 @@ import ShineBorder from "../ui/shine-border";
 import Particles from "../ui/particles";
 
 import { PointerIcon } from "lucide-react";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoMailSharp } from "react-icons/io5";
+import SocialLinks from "./SocialLinks";
 const Homepage = () => {
   const handleDownload = () => {
     const pdfUrl = "sharmin_cv.pdf";
@@ -47,9 +50,15 @@ const Homepage = () => {
               Modern Design.
             </p>
         
-            <div className="lg:my-4 mt-4">
+           
+            <div className='flex gap-6 my-7 items-center text-black cursor-pointer'>
+              <SocialLinks/>
+
+                
+              </div>
+              <div className="lg:my-4 mt-4">
               <ShineBorder
-                className="btn btn-outline  text-orange-300 font-semibold"
+                className="btn btn-outline  text-orange-300 font-semibold bg-transparent hover:bg-transparent hover:rounded-lg"
                 color="orange"
               >
                 <button onClick={handleDownload}>Download My CV</button>

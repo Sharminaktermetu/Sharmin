@@ -11,6 +11,7 @@ import { HeroVideoDialogDemoTopInBottomOut } from "@/components/Video";
 import certificate1 from '../../assests/projects/Screenshot_5.png'
 import certificate from '../../assests/projects/Screenshot_31.png'
 import Whyme from "@/components/Whyme";
+import SocialLinks from "@/components/Home/SocialLinks";
 const AboutMe = () => {
   const handleDownload = () => {
 
@@ -42,13 +43,10 @@ const AboutMe = () => {
               Download My CV
               </button>
                
-              <div className='flex gap-6 mt-2 items-center text-black justify-center'>
-                <IoMailSharp className="h-6 w-6 bg-orange-200 rounded-full p-1" />
-                <FaGithub className="h-6 w-6 bg-orange-200 rounded-full p-1" />
-                <FaLinkedin className="h-6 w-6 bg-orange-200 rounded-full p-1" />
-                <FaFacebook className="h-6 w-6 bg-orange-200 rounded-full p-1" />
+              <div className='flex gap-6 my-7 items-center text-black cursor-pointer'>
+              <SocialLinks/>
 
-                {/* <div className='h-12 w-12 rounded bg-white'>Call</div> */}
+                
               </div>
             </div>
           </div>
